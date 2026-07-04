@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "general",
+  "projectName": "PokeSignal",
+  "projectDescription": "A step-by-step course teaching entrepreneurs how to launch and grow a profitable online Pokémon business.",
   "theme": "almond",
-  "name": "PokeSignal",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -75,14 +73,15 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Start Learning",
-      "href": "/introduction"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Step-by-step course modules for launching an online Pokémon card business",
+    "Niche selection guidance for cards, sealed products, and collectibles",
+    "Sourcing strategies covering retail arbitrage, wholesale, and collections",
+    "Platform setup walkthroughs for eBay, TCGPlayer, Etsy, and personal storefronts",
+    "Pricing strategy and market research techniques",
+    "Branding, social media, and community-building playbooks",
+    "Legal, tax, and accounting essentials for online sellers",
+    "Scaling and operations guidance for growing businesses"
+  ],
+  "publicApiSurface": []
 }
