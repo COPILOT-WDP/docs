@@ -1,9 +1,14 @@
-# From Binder to Business
+# The Operator's Manual
 
-A free, source-grounded reference manual on starting and running an online Pokemon card
-business, mined from hundreds of videos by operators with documented track records.
+Building an online Pokemon card business, from documented operator practice — a free,
+source-grounded manual by PokeSignal, mined from hundreds of videos by operators with
+documented track records.
 
 Published with [Mintlify](https://mintlify.com). Every push to `main` deploys the site.
+
+Content license: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) —
+free to read and share verbatim with attribution; no commercial use; no modified
+republication. See `LICENSE`.
 
 ## Do not edit pages here
 

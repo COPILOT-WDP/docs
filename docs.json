@@ -1,17 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "From Binder to Business",
-  "description": "A free, source-grounded reference manual on starting and running an online Pokemon card business.",
+  "name": "The Operator's Manual",
+  "description": "Building an online Pokemon card business, from documented operator practice — a free manual by PokeSignal.",
   "colors": {
     "primary": "#16A34A",
     "light": "#4ADE80",
     "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "primary": {
@@ -98,6 +93,15 @@
     "indexing": "all"
   },
   "footer": {
-    "socials": {}
+    "links": [
+      {
+        "items": [
+          {
+            "label": "License: CC BY-NC-ND 4.0",
+            "href": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+          }
+        ]
+      }
+    ]
   }
 }
