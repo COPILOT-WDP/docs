@@ -1,8 +1,7 @@
-# The Operator's Manual
+# Pokemon Card Business 101
 
-Building an online Pokemon card business, from documented operator practice — a free,
-source-grounded manual by PokeSignal, mined from hundreds of videos by operators with
-documented track records.
+The free, source-grounded 101 for building an online Pokemon card business. A manual
+by PokeSignal, mined from hundreds of videos by operators with documented track records.
 
 Published with [Mintlify](https://mintlify.com). Every push to `main` deploys the site.
 

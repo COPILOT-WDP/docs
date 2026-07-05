@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "The Operator's Manual",
-  "description": "Building an online Pokemon card business, from documented operator practice — a free manual by PokeSignal.",
+  "name": "Pokemon Card Business 101",
+  "description": "The free, source-grounded 101 for building an online Pokemon card business. By PokeSignal.",
   "colors": {
     "primary": "#16A34A",
     "light": "#4ADE80",
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "group": "Part 1 — Foundations: Think Like an Operator",
+        "group": "Part 1 · Foundations: Think Like an Operator",
         "pages": [
           "chapters/1-1-the-merchant-mindset",
           "chapters/1-2-what-success-actually-looks-like",
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "group": "Part 2 — The Economic Engine",
+        "group": "Part 2 · The Economic Engine",
         "pages": [
           "chapters/2-1-you-make-money-when-you-buy",
           "chapters/2-2-the-real-cost-stack",
@@ -42,14 +42,14 @@
         ]
       },
       {
-        "group": "Part 3 — The Product Classes",
+        "group": "Part 3 · The Product Classes",
         "pages": [
           "chapters/3-1-the-four-product-classes",
           "chapters/3-2-matching-class-to-capital"
         ]
       },
       {
-        "group": "Part 4 — Operations: The Craft",
+        "group": "Part 4 · Operations: The Craft",
         "pages": [
           "chapters/4-1-sourcing-the-ladder",
           "chapters/4-2-choosing-where-to-sell",
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "group": "Part 5 — Staying Alive: Money and Risk",
+        "group": "Part 5 · Staying Alive: Money and Risk",
         "pages": [
           "chapters/5-1-business-money-hygiene",
           "chapters/5-2-bankroll-discipline",
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "group": "Part 6 — Growth: The Long Game",
+        "group": "Part 6 · Growth: The Long Game",
         "pages": [
           "chapters/6-1-systems-before-scale",
           "chapters/6-2-content-is-a-moat",
@@ -91,17 +91,5 @@
   },
   "seo": {
     "indexing": "all"
-  },
-  "footer": {
-    "links": [
-      {
-        "items": [
-          {
-            "label": "License: CC BY-NC-ND 4.0",
-            "href": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-          }
-        ]
-      }
-    ]
   }
 }
