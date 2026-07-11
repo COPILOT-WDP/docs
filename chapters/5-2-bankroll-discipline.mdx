@@ -1,136 +1,145 @@
 ---
-title: "5.2 · Bankroll Discipline and the No-Leverage Rule"
-sidebarTitle: "Bankroll Discipline and the No-Leverage Rule"
-description: "Bankroll is money that's allowed to lose. Why debt never buys inventory, why you scale to your cash — even one booster box — and why a small bankroll is a feature."
+title: "5.2 · Set the Capital Boundary"
+sidebarTitle: "Set the Capital Boundary"
+description: "Protect household money and operating cash, cap one purchase, stress the downside, and require cleared cash behind any credit purchase."
 ---
 
-On a financial-audit show, a Pokemon buyer's statements went up on screen. \$26,000 spent on
-cards in a single month. A \$5,350.51 balance on the credit card he used for Pokemon. Total
-debt: eleven thousand. He was paying his Affirm installments with a credit card — debt paying
-debt so the packs could keep coming. The statement showed how: \$40, \$20, \$20, \$40. Small
-charges that never felt like decisions.
+An account may show \$3,000 while far less is available for the next buy. Bills, open purchases,
+customer recovery, protected operating cash, and the [Chapter 3.2](/chapters/3-2-matching-class-to-capital) lane cap all constrain it. This
+chapter turns the latest monthly close into a boundary that exists before the next opportunity.
 
-Operators who watched that clip didn't see a freak case. They saw sellers they recognize —
-just further along.
+## Start with cash that is actually available
 
-## The principle
+Keep household money outside the calculation. Start with reconciled, cleared business cash from the
+latest close; exclude pending payouts, unsold inventory value, a card limit, and expected sales.
+Resolve any material cash difference before sizing a purchase.
 
-**Bankroll is money that's allowed to lose.** It can sit in a slow set for a month, drop 10%
-in a correction, or die in a bad buy — and nothing in your life changes. Rent, groceries, the
-car payment, the emergency fund: none of that is bankroll, and none of it ever buys inventory.
+Define four buckets:
 
-From that definition follows the most documented money rule in this business. **The
-no-leverage rule: no credit cards, no leverage, no debt for inventory plays. Scale purchases
-to what you can afford — even if that's one booster box.** That's nearly verbatim from an
-operator buying sealed cases with cash while on pace for \$100,000 in sales that month: "Buy
-one booster box if that's all you can afford."
+| Bucket | Meaning | Can fund a new buy? | Reader records |
+|---|---|---|---|
+| Household money | Personal cash and reserves outside the business | No | Accounts or amounts excluded from every business formula |
+| Near-term commitments | Business cash already promised to bills, open purchases, remedies, or other due obligations | No | Amount, due date, and record |
+| Protected operating cash | Reader-chosen minimum kept for normal operation and recovery | No | Amount, included needs, basis period, owner, and review date |
+| Deployable business cash | Cleared cash left after commitments and protected cash | Yes, within the remaining controls | Calculation date and amount |
 
-The rule is absolute because inventory is a risk asset and debt is a fixed obligation. A
-\$2,000 sealed case that drops 10% is a \$200 paper loss — ten cases, and \$2,000 just
-evaporated. In cash, that's a bad month. On a card, the drawdown doesn't pause the bill. The
-market decides when your money comes back; the card decides when the payment is due. Leverage
-turns a dip into a forced sale at the bottom.
+Use the same included business accounts as the latest close. Let `B` be their reconciled cleared
+cash. Let `K` be outstanding named near-term commitments whose cash remains in `B`, and `R` be
+additional protected operating cash not assigned to `K`.
 
-## Bankroll versus life money
+All three use the same date and currency and must be nonnegative. Count each amount once: do not
+subtract cash already outside `B`, and do not put the same bill, open purchase, authorized remedy,
+or other obligation in both `K` and `R`.
 
-Draw the line first:
+**Deployable business cash = max(0, B − K − R)**
 
-| | Bankroll | Life money |
-|---|---|---|
-| What it's for | Inventory. Taking risk. | Rent, bills, food, the emergency fund. |
-| Can it drop 10% this month? | Yes — that's its job | Never |
-| Can it sit in a slow set? | Yes, though velocity is the goal ([Chapter 2.3](/chapters/2-3-cashflow-is-oxygen)) | No — bills have due dates |
-| Where it lives | The business account ([Chapter 5.1](/chapters/5-1-business-money-hygiene)) | Your personal account |
-| What refills it | Sales and retained profit | Your paycheck |
+If commitments plus protected cash exceed the cleared balance, deployable cash is zero. New
+inventory buying pauses; a pending payout or unused credit limit does not repair the deficit.
 
-The evidence is blunt about rent. Asked about someone struggling to make rent while \$6,000 of
-cards sits in the closet, one operator says the obvious: sell the cards. Another goes
-further — holding \$200,000 of cards while struggling financially? Sell, even at 85% of
-market, and put the money somewhere stable. Appreciation is irrelevant when
-the money is already spoken for. [Chapter 2.1](/chapters/2-1-you-make-money-when-you-buy)'s checklist ends with the same test: *can I
-afford to be wrong on this one?* If it's rent money, the answer is no.
+## Set the single-buy ceiling
 
-The line holds in both directions. One operator pulled cash out for a home renovation and
-could no longer buy the \$20,000-plus collections driving his growth — extracting capital from
-your base stunts it. Going full-time has its own life-money gate: six months of rent and
-bills saved, twelve to be safe ([Chapter 6.3](/chapters/6-3-going-full-time-or-not)).
+The lane cap in [Chapter 3.2](/chapters/3-2-matching-class-to-capital) limits total capital assigned to one lane. A single-buy cap limits one
+transaction. A proposal must pass both.
 
-## Scale to the bankroll
+Choose a maximum single-buy share `p` between 0 and 1. If useful, add a fixed-dollar cap `F`.
+Remaining lane capacity is the lane's total cap minus current allocation, floored at zero.
 
-You don't need \$30,000 to start — one operator says exactly that. Play the rung you're on:
+Without a fixed cap, the ceiling is:
 
-| Your bankroll | What operators document at this level |
-|---|---|
-| \$20–\$100 | Bulk to sort and list — the lowest entry ticket in the business |
-| "Truly \$200 or \$300" | Sifting bulk. Collection buying isn't available yet — that's normal |
-| \$200–\$500 | First small collection buys; documented as "definitely enough to get going" |
-| \$500 → \$5,000 | The jump that changes the game: \$500 competes with everyone; \$5,000 wins real collections |
-| \$3,000–\$5,000 | Liquid, proven product over cheap slow sellers — money that still moves |
-| Established store cash | Lower five-figure collections "fairly easily" — after ~two years of reinvested cycles |
+**Maximum permitted purchase = min(p × deployable cash, remaining lane capacity)**
 
-Every rung is cash. The route up is [Chapter 2.3](/chapters/2-3-cashflow-is-oxygen)'s reinvestment loop — buy, sell, leave the
-margin in, buy slightly bigger. One operator claims that cycle can grow a bankroll to \$10,000
-and eventually \$100,000. Nobody in the evidence base borrowed their way up.
+If the policy also uses fixed cap `F`, add it as a third limit:
 
-The ladder tops out with discipline, too. One operator passed on a \$200,000 collection he
-couldn't sell fast enough; another turned one down flat — "If I buy this guy's \$200,000
-collection, I am in the red." Both could have stretched; neither did. Chunky purchases
-oversized for your bankroll are how undercapitalized sellers get hurt; thin bankrolls belong
-in singles and bulk, not sealed ([Chapter 3.2](/chapters/3-2-matching-class-to-capital)).
+**Maximum permitted purchase = min(p × deployable cash, F, remaining lane capacity)**
 
-## The constraint is the curriculum
+A proposed purchase `P` includes every known amount required to acquire the inventory and passes
+this first gate only when `P` is no greater than the result. Choosing `p = 1` permits the full
+deployable amount unless the fixed or lane cap is lower.
 
-A small bankroll feels like the problem. The record says it's the tuition structure. When
-capital is scarce, you can't afford dead inventory, so you learn to buy what moves. You
-can't wait out appreciation, so you learn velocity — one operator would rather make \$10 now
-and \$10 more in two or three weeks than wait three months for \$20. And you learn that cash
-in hand buys the next deal: tie up everything, and the 80% collection needing \$20,000 walks
-past while you watch. "Not having liquidity is the only thing that can really kill you."
+Here is an invented illustration. Suppose `B = \$3,000`, `K = \$600`, and `R = \$900`. Deployable
+cash is `\$1,500`. The reader chooses a 40% single-buy share, a `\$750` fixed cap, and has `\$900` of
+lane capacity remaining:
 
-A borrowed bankroll skips those lessons — and still sends the bill. The constraint is the
-curriculum. And no rung is too low to run the loop — there is always, as one operator puts
-it, capital for bulk.
+**min(40% × \$1,500, \$750, \$900) = \$600**
 
-> **Operators disagree.** One school is absolute: never use credit cards or go into debt for
-> Pokemon product — even the loudest risk-takers carve this out ("Please don't use a credit
-> card. Please don't go into debt"). The other school floats: buy on credit, sell before the
-> payment is due — one operator documented running \$50,000 of inventory through a card that
-> way and calls it "an interest-free loan." But read the float school's own fine print —
-> "extremely risky," don't do it unless you know what you're doing — and the \$50,000 floater
-> calls tactics like his horrible practice for most people. One nuance both accept: cost
-> basis changes the risk — a \$100 distributor box against a far higher market is a different
-> bet than full market on plastic. Resolve it with one question: **could you pay the card in
-> full today, from business cash, if nothing sold this month?** If yes, it's a payment tool.
-> If no, it's leverage — and the rule applies to you.
+An `\$800` proposal fails even though the account holds `\$3,000`. None of those amounts or the 40%
+share is a recommendation; they exist only to show how the controls interact.
 
-## Tuition, not debt
+## Stress the delay and downside
 
-Cash losses are tuition. Leveraged losses are debt.
+Before testing a proposal, set the maximum cumulative loss the operation can absorb during one
+policy period while commitments remain payable, protected cash and customer promises remain intact,
+and no household transfer or new borrowing is needed. If no positive amount passes, the limit is
+zero. Record the period, included exposures, owner, and review date. This is a reader-chosen
+control, not an industry percentage.
 
-One operator put \$30,000 into a single set — almost all his working capital — and later had
-to sell another set at a loss to raise cash. His lesson: stay liquid for the number-one
-opportunities. Expensive, but survivable — it was his cash, and the business kept running.
-Compare the seller whose farewell letter listed credit-card-funded sealed buying among his
-mistakes — "never a good one," said the operator reading it. Survivability was decided by
-where the money came from. The far end of that road: collectors with five- and six-figure
-collections, still owing on a decent portion of them. The market doesn't know what you owe,
-and it doesn't care.
+Passing the allocation ceiling is not enough. Choose a review date, assume no proceeds clear before
+then, and require every commitment and the protected operating amount to remain intact without a
+household transfer or new borrowing.
 
-Inside a real bankroll, small losses lose their power. Operators frame an ETB bet as risking
-\$20 to \$30 against a shot at doubling — and say that if you're building something
-significant, you can't be derailed by \$20 or \$30 losses. That calm is only available when the
-\$30 was allowed to lose. On a card, it compounds monthly.
+Then model a conservative exit using the cost worksheet from [Chapter 2.2](/chapters/2-2-the-real-cost-stack):
 
-## In practice
+**Loss exposure = max(0, purchase outlay + modeled exit costs − conservative sale revenue)**
 
-Before money leaves the account, all six answers should be yes:
+Use one scenario date, currency, and inventory scope. Purchase outlay is the proposal's acquisition
+amount. Modeled exit costs come from [Chapter 2.2](/chapters/2-2-the-real-cost-stack) and exclude that outlay. Conservative sale revenue
+is a reader-supplied scenario, not a market prediction.
 
-- [ ] Is every dollar of this buy existing business cash — no card balance, no loan, no bill
-  money?
-- [ ] If this inventory dropped 20% tomorrow, would life outside the business be untouched?
-- [ ] Am I buying at my rung — or imitating an operator with ten times my bankroll?
-- [ ] Could I afford to hold this if it doesn't sell on schedule?
-- [ ] Will cash remain after this buy for the next deal?
-- [ ] Tempted to float it on a card: could I pay the balance in full today if nothing sells?
+Use [Chapter 3.2](/chapters/3-2-matching-class-to-capital)'s lane-loss limit as the current open-exposure boundary for that lane. Before adding
+the proposal, total the modeled loss exposure still open in this lane and across the whole
+operation. Also total losses already realized during the whole-operation policy period. Use
+the same scenario date, currency, policy period, and loss method. Count each position once: the lane
+total is already part of the operation total, and the proposal remains outside both totals until it
+passes. When an open position closes, remove its modeled exposure and record the realized loss; do
+not keep both.
 
-**The handle to remember:** bankroll is money that's allowed to lose. Debt never is.
+**Remaining lane-loss headroom = max(0, lane-loss limit − open modeled loss exposure in the
+lane)**
+
+**Remaining operation-loss headroom = max(0, whole-operation loss limit − realized losses in the
+policy period − open modeled loss exposure across the operation)**
+
+The proposal passes the loss gate only when its modeled loss exposure is no greater than both
+remaining headrooms. If it is accepted, add its exposure to the lane and operation totals. If the
+delay or loss breaks either boundary, reduce or reject the buy. Any later pricing or markdown
+response remains a separate decision.
+
+## If credit is used, reserve the cash first
+
+This course does not recommend opening or using credit. If the business independently pays with a
+card or another credit instrument, test the purchase before buying.
+
+Let `T` be the full amount that will be due and `H` cleared business cash reserved only for that
+obligation. The purchase counts as cash-backed under this policy only when all four conditions are
+true:
+
+- `H` is at least `T` before the purchase;
+- reserving `H` does not invade commitments or protected operating cash;
+- `H` is removed from deployable cash until the obligation is settled;
+- repayment requires no inventory sale, pending payout, household money, or new borrowing.
+
+If any condition fails, the purchase relies on financing and does not proceed. Expected
+contribution, a high limit, or confidence in fast sell-through cannot replace the backing cash.
+This boundary does not address existing personal debt or compare financial products.
+
+## Write the capital policy
+
+Finish with a rule that can be checked before every buy:
+
+**Cash boundary:** As of ___, reconciled cleared business cash is \$___. Household money excluded
+from every calculation is ___. Near-term commitments are \$___, protected operating cash is \$___
+based on ___, and deployable business cash is \$___.
+
+**Purchase rule:** Maximum single-buy share ___. Fixed cap ___ / not used. Remaining lane capacity
+\$___. Maximum permitted proposal \$___.
+
+**Downside:** Lane-loss limit \$___; open lane exposure \$___; remaining lane headroom \$___.
+Whole-operation loss limit \$___ for policy period ___, based on ___; realized period losses \$___;
+open operation exposure \$___; remaining operation headroom \$___. Scenario date/method ___. Proposal
+loss exposure \$___. It must fit both headrooms and pass a no-proceeds-through-___ stress without
+using protected cash.
+
+**Payment:** If credit is used, full amount due \$___ is backed by reserved cleared cash \$___ and
+passes all four tests.
+
+**Governance:** Purchases pause when ___. Policy owner ___. Next review ___.

@@ -1,145 +1,87 @@
 ---
-title: "5.3 · The Risk Map"
-sidebarTitle: "The Risk Map"
-description: "What actually kills card businesses — platform shutdowns, scams and fakes, reprints, dead inventory, burnout — and why velocity hedges all of it."
+title: "5.3 · Match Risks to Controls"
+sidebarTitle: "Match Risks to Controls"
+description: "Build a small register that gives each operating risk a fitting prevention, response, trigger, owner, and review date."
 ---
 
-April 15. An operator's store had just broken \$90,000 in sales for the month, "thousands and
-thousands of dollars every day." Then the email: *your store has been shut down.* Not for
-selling fakes. An automated copyright flag on the \$350 website theme the platform itself had
-sold him. He couldn't log in. The platform, he figured, was holding \$20,000–22,000 of his
-payouts; he'd bought a \$46,000 collection the week before, and the sellers were waiting on
-their money. The claimant had up to fourteen days.
+If the primary sales venue became unavailable tomorrow, what would stop? Open orders, payout
+visibility, listings, or buyer communication might be affected. Selling inventory faster would
+not restore access. It addresses a different risk.
 
-Real risk doesn't show up on a price chart. It shows up in your inbox.
+That distinction is the purpose of a risk register. It prevents one sensible idea—more cash,
+faster turns, harder work, a second account—from being presented as the answer to every failure
+mode.
 
-## The principle
+## Test whether the control fits
 
-**Velocity is the hedge.** What kills card businesses is operational: a platform locks you
-out, a scam lands, a reprint reprices what you hold, a slow season finds you with no cash,
-you burn out. You can't predict any of it — and you don't have to.
-Nearly every risk on this map kills the same way — *your money is trapped in something when
-the thing breaks* — and the faster inventory turns, the less money stands in the blast radius.
-[Chapter 2.3](/chapters/2-3-cashflow-is-oxygen) taught turn speed as your engine. This chapter is turn speed as armor.
+For each risk, name the exposure before choosing the control. Then ask what the control actually
+changes:
 
-One operator says it plainly: prices "can go down if we get a lot of reprints" — so he buys
-inventory and gets it out the door to keep money ready. Churn and burn: buy, sell, repeat —
-so a hard drop hits the inventory in your hands that week, not your whole year.
+- **Probability:** does it make the event less likely?
+- **Exposure:** does it reduce the money, inventory, workload, or dependency present when it
+  happens?
+- **Detection:** does it reveal the event or mismatch sooner?
+- **Recovery:** does it make the response faster, cheaper, or more reliable?
 
-| Risk | How it kills | The hedge |
-|---|---|---|
-| Platform shutdown | Sales stop, payouts freeze; bills don't | Own the customer list; keep receipts; warm a second channel |
-| Scams and fakes | One loss eats five sales' margin | Verify orders; vibe-check sellers; price the tenth scam in |
-| Reprints / demand shocks | Held product reprices below your buy | Turn fast; hold within your bankroll |
-| Illiquid inventory | Capital freezes in a thin buyer pool | Price to move; respect the buyer pool |
-| Single-channel dependence | One failure is total failure | Platform-agnostic brand; a second road to the customer |
-| Burnout | The operator quits in a slow season | Plan cash for cycles; take real breaks |
+Separate prevention from response. A position cap can reduce inventory exposure before a price
+move; it does not tell the business what to do after its exit limit is breached. Preserving records
+may help an investigation; it does not prevent a platform interruption or guarantee a favorable
+decision.
 
-## The platform is a landlord
+The control does not need to remove the risk. It needs a defensible mechanism and a written point
+at which someone acts.
 
-It wasn't that operator's first emergency — the same platform had earlier threatened closure
-over product authenticity, and receipts showing where his inventory came from saved him. And
-it isn't one company. A seller on a different venue, mid-outage: "when you are dependent on
-any other platform, there's just something you have to deal with."
+## Build the register around real dependencies
 
-You can't out-negotiate a landlord — only shrink what he holds hostage:
+Use a small number of material risks. The examples below show the required logic; replace every
+trigger and scope with the operation's own evidence.
 
-- **Own the relationship.** One operator keeps customer names, emails, and addresses so he can
-  move everyone to another storefront the day his current one turns on him. Another's goal:
-  platform agnostic — "you do not rely on any platform or venue to do business." Venues
-  included: a convention-only business scales at someone else's pleasure.
-- **Keep receipts like your store depends on it** — it does. Platforms audit card sellers
-  for counterfeits; records that exist on demand are what clear you ([Chapter 5.1](/chapters/5-1-business-money-hygiene)).
-- **Warm a second channel before you need it** (venue trade-offs: [Chapter 4.2](/chapters/4-2-choosing-where-to-sell); the audience
-  you own: [Chapter 6.2](/chapters/6-2-content-is-a-moat)).
+| Risk and exposure | Prevention and what it changes | Trigger and response | Owner and review |
+|---|---|---|---|
+| Platform or service interruption: orders, records, payouts, or listings depend on one service | Keep transaction, inventory, and sourcing records; test a genuinely distinct venue. This improves recovery and reduces concentration, not outage probability. | If required access is lost or an open promise is at risk: pause new commitments, reconcile orders and cash, preserve notices, and communicate under [Chapter 4.4](/chapters/4-4-fulfillment-and-the-customer-promise). | Owner: ___; next review: ___ |
+| Fraud, authenticity, or material transaction mismatch: cash, stock, or customer outcome is exposed before evidence agrees | Use written identity, payment, provenance, condition, and inspection checkpoints; cap one-counterparty exposure. This improves detection and limits loss. | On an evidence mismatch, failed inspection, or missing payment or item: stop the next reversible step, quarantine affected stock, preserve evidence, and use the governing procedure. | Owner: ___; escalation: ___; review: ___ |
+| Inventory repricing or illiquidity: value changes or the buyer pool cannot absorb the position on schedule | Apply the [Chapter 5.2](/chapters/5-2-bankroll-discipline) allocation boundary, write the exit condition, and track age. This limits amount and duration exposed. | When a written price, age, contribution, or capital-use limit is breached: stop adding exposure and reopen the [Chapter 2.4](/chapters/2-4-selling-is-a-math-problem) exit and capital decisions. | Owner: ___; review: ___ |
+| Concentration: one venue, product, counterparty, customer segment, or owner carries too much of one defined exposure | Measure one dependency on one basis and date; set a maximum; test only an operationally distinct alternative. This limits one failure's reach. | When the share exceeds the maximum or enters a warning state: stop adding exposure and execute the prewritten reduction or test. | Owner: ___; maximum: ___; review: ___ |
+| Demand slowdown: demand falls against the operation's comparable history while commitments continue | Use the business's own baseline, preserve the [Chapter 5.2](/chapters/5-2-bankroll-discipline) cash boundary, and prewrite the first commitment to change. | When the chosen demand or cash measure crosses ___: make the written intake, spending, or capacity change and schedule a review. | Owner: ___; review: ___ |
+| Owner-capacity interruption: one person's time, knowledge, or authority is required for a critical stage | Document the minimum process and name coverage or a deliberate pause. This limits one-person dependency and new commitments. | When the next intake, fulfillment, or response window cannot be met—or workload crosses ___—invoke coverage or pause, update promises, and send a recurring queue to [Chapter 6.1](/chapters/6-1-systems-before-scale). | Owner: ___; backup/pause: ___; review: ___ |
 
-> **Operators disagree.** After the shutdown, that operator's verdict was absolute: "Do not
-> ever use Shopify" — he began migrating to a competitor. The other school shrugs: "none of
-> those platforms are perfect," people succeed on all of them, and one operator estimates a
-> pro-seller forum is 80% platform complaining — energy better spent listing and building a
-> brand. Resolve it with one question: **if this channel vanished tonight,
-> could I reach my customers tomorrow?** If yes, platform choice is a fee-and-features
-> decision. If no, you're one automated email from zero — whatever logo is on the storefront.
+For transaction risk, a questionnaire, photograph, sample, or prior history can inform a written
+check; none proves that a counterparty or whole lot is safe. Name the mismatch that stops work and
+the evidence that releases it.
 
-## Scams are a tax, not a catastrophe
+## Measure concentration on one basis
 
-One operator's arithmetic: lose one ETB bought at \$80 to a scam and it can take five future
-ETB sales to get back to even. So scams belong in your cost stack ([Chapter 2.2](/chapters/2-2-the-real-cost-stack)) — priced in,
-minimized by system, never assumed away. Past roughly \$50,000 a month in sales, scammers are
-"a dime a dozen"; good prevention blocks about nine in ten, and the tenth is a cost of doing
-business. And trust alone is not a system: one operator was taken for \$600–700 by a seller
-he'd bought from many times.
+Concentration becomes usable when the denominator is explicit:
 
-One seller's written ladder for outbound orders:
+**Dependency share = exposure tied to one dependency ÷ total relevant exposure**
 
-| Order | The rule |
-|---|---|
-| Every order | Billing/shipping states differ, or the platform flags medium or high risk → cancel. New customer → search the address |
-| Over \$300 | Text or email; the contact info has to work |
-| Over \$500 | Phone call. Won't talk → cancel |
-| \$1,000+ | A real conversation before anything ships |
+Choose one basis whose parts can be added cleanly—completed orders, inventory acquisition cost,
+open payments, sourcing spend, or critical workflow hours—and one period or measurement date.
+The amount tied to one dependency must be part of the total and cannot exceed it. The total must
+be positive; if it is zero, the share is *not applicable*, not zero.
 
-Buying, the documented signals:
+Suppose an invented shop completed 90 orders in eight weeks and 72 used one venue. Its dependency
+share on the completed-order basis is `72 ÷ 90 = 80%`. That describes the concentration; it does
+not make 80% a course limit or prove that the venue is unsafe. Choose the maximum and response from
+the continuity your operation needs.
 
-- **The vibe check is the top filter.** One operator ignored his gut on suspicious deals and
-  "it ended up being bad" every time. Pressure to hurry is "an absolute red flag"; scammers
-  hate questions. A seller who refuses a card-shop meetup — career experts deter fake
-  binders — and insists on a gas station is telling you something.
-- **Inspect like a merchant.** Check the big hitters, sample the rest, look hardest at older
-  cards — and at anything in Card Saver Pros: that storage signals grading plans, so those
-  condition claims deserve your closest look.
-- **Too cheap is a verdict, not a deal.** Counterfeiters reseal printed packs — real outside,
-  bulk inside. Suspiciously cheap Japanese boxes shipping from China are likely fake: "it is
-  not possible to run a Japanese business at such low margins." On singles, a glassy sheen is
-  the classic tell.
+Faster sale or a smaller position belongs in the inventory row because it can reduce the amount or
+time exposed. Cash can absorb a loss but does not prevent the event. Use neither as a substitute
+for the other controls in the register.
 
-## Reprints and demand shocks are an operator problem
+## Use current rules only where they apply
 
-You don't need to predict reprints — you need to stop being hostage to them. What operators
-document: reprints of playable, high-demand cards "crush the value of those cards" for anyone
-holding them; in-print sets carry the most exposure — "there's a lot more risk in things in
-print"; and nobody credible knows the timelines — "we certainly don't know about reprints,"
-whatever confident videos claim.
+When a response depends on a platform, payment, authentication, privacy, claim, or appeal rule,
+check the current official procedure for the actual account, transaction, and jurisdiction. Record
+its source, date, and scope. Until verified, do not assume records guarantee reinstatement, exports
+are permitted, a visual clue proves authenticity, or contact details may be reused.
 
-The hedge is operational: buy at bands that survive ([Chapter 2.1](/chapters/2-1-you-make-money-when-you-buy)), keep sealed exposure
-inside your bankroll (Chapters [3.1](/chapters/3-1-the-four-product-classes) and [5.2](/chapters/5-2-bankroll-discipline)), and turn — one operator would "rather take 7%
-or 8% gains and rotate inventory into better products" than let stock sit as a display. A
-store that turns weekly wears a reprint like weather. A shelf of held cases wears it as a
-balance-sheet event.
+## Finish the register
 
-## Inventory that sits is stored risk
+Copy the table into your register. Keep only risks that can materially interrupt the next review
+period, replace every illustrative scope and trigger with your own evidence, and add any material
+risk that is missing. For each row, record which of probability, exposure, detection, or recovery
+the prevention changes, then give the response a trigger, owner, next action, and date. Attach the
+source and check date to any row that depends on a current external procedure.
 
-Booster boxes near \$900 sat unsold in one operator's store. A \$1,000 box listed at roughly
-90% of market: "still sitting." The higher the ticket, the thinner the buyer pool: even an
-ETB appreciating toward \$400–500 gets "really hard to find a buyer."
-Dead inventory is every other risk on this map at once: capital you can't redeploy, reprint
-exposure you can't shed, a hostage you can't move. Priced to sit is priced to lose
-([Chapter 2.4](/chapters/2-4-selling-is-a-math-problem) does the math).
-
-## The slow season is a season
-
-Bad seasons are "when, not if." Sales run hot in the
-holidays and hard in summer; one operator calls May the worst month for card sales; another
-logged his store down 10–12% and called it a summer slowdown, not a crash. Slow seasons are
-cycles, not verdicts.
-
-Plan for them twice. **With cash:** if the bankroll assumes every month is December, May
-becomes an emergency; reserves and the no-leverage rule ([Chapter 5.2](/chapters/5-2-bankroll-discipline)) make a slow month
-boring, not fatal. **With rest:** if the business turns miserable, take breaks rather than
-grind without nuance; if selling makes you resent the hobby, pull back. One creator-operator
-took six weeks off; another stopped buying collections a week before vacation, accepting
-about ten days of lost momentum on purpose. "Success at a slower rate is still success."
-
-## In practice
-
-Answer all five before you call risk handled:
-
-- [ ] If your main channel vanished tonight, could you reach your customers tomorrow from a
-  list you own?
-- [ ] Could you produce sourcing receipts this week if a platform demanded them?
-- [ ] How much bankroll sits in items with only a handful of realistic buyers?
-- [ ] If your product got reprinted tomorrow, how many weeks of inventory does it hit?
-- [ ] Which months run slow in your lane — and does your cash plan know it?
-
-**The handle to remember:** velocity is the hedge. You can't predict the storm. You can
-shorten the time you spend standing in it.
+**Register period:** ___ through ___  **Full review date:** ___  **Reopen immediately after:** ___

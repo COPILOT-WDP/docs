@@ -1,58 +1,136 @@
 ---
 title: "Appendix A · Quick Reference"
 sidebarTitle: "Quick Reference"
-description: "The numbers that matter, on one page, with pointers to the full tables."
+description: "The course's core formulas and the fields that keep a policy usable."
 ---
 
-Documented operator practice, US market, 2025–2026. Treat every number as a starting point
-and verify current fees on your venue: the *categories* are durable, the digits drift
-([Chapter 2.2](/chapters/2-2-the-real-cost-stack): learn categories, not fee tables).
+Use these formulas with your own inputs. Keep each formula's applicable unit or currency, date or
+period, perimeter, and cost basis together, and date anything that can change. A zero can make a
+result invalid or not computable; each block states which.
 
-## The engine
+## Deal economics
 
-| Number | Rule | Full table |
-|---|---|---|
-| **~70%** of market | The buy anchor for collections; adjust by band, for a reason | [2.1](/chapters/2-1-you-make-money-when-you-buy) |
-| **~95%** of market | The sell price that keeps inventory moving | [2.4](/chapters/2-4-selling-is-a-math-problem) |
-| **~8% / ~15%** of gross | Lean vs. typical all-in cost stack; measure yours | [2.2](/chapters/2-2-the-real-cost-stack) |
-| **7–8% per turn** | Rotated fast, beats holding for appreciation | [1.1](/chapters/1-1-the-merchant-mindset), [2.3](/chapters/2-3-cashflow-is-oxygen) |
-| Sales × **0.15–0.25** | Honest earnings conversion; never quote sales as profit | [2.4](/chapters/2-4-selling-is-a-math-problem) |
+### Maximum acquisition offer
 
-## The bands (from [Chapter 2.1](/chapters/2-1-you-make-money-when-you-buy))
+**Maximum offer = expected realizable value − C_lot − uncertainty reserve − target lot
+contribution**
 
-70% standard · up to 75% learning or volume · 75–80% itemized clean lots · 80%+ only with
-proven velocity and a lean stack · dirt-cheap-or-pass for anything that sits · ~90%+
-vendor-to-vendor · bulk is cents-per-card, not percentages.
+Expected realizable value reflects the lot's mix, condition, and buyer evidence—not optimistic
+listings. `C_lot` is the whole lot's modeled selling and fulfillment cost, including labor and an
+explicit loss allowance. `Uncertainty reserve` covers forecast error not already counted;
+`target lot contribution` is the reader-chosen minimum contribution after those allowances, not
+net profit. [Chapter 2.1](/chapters/2-1-you-make-money-when-you-buy) has the full worksheet.
 
-## Gates and thresholds
+### Selling cost and contribution
 
-| Threshold | Unlocks / means | Chapter |
-|---|---|---|
-| 20 orders shipped | Any spend on structure or scaling tools | [1.4](/chapters/1-4-validate-before-you-build) |
-| ~50 good-feedback orders | Marketplace storefront perks (~5% fees, bulk viability) | [4.2](/chapters/4-2-choosing-where-to-sell) |
-| ~\$2,000 sales / ~200 orders | A card scanner earns consideration | [4.3](/chapters/4-3-listing-and-inventory-discipline) |
-| Several \$1,000s in sales | The entity/LLC decision point (one school: sooner) | [5.1](/chapters/5-1-business-money-hygiene) |
-| Bulk profitable *without* it | A sorting machine ("if you can't do bulk without the sifter…") | [4.3](/chapters/4-3-listing-and-inventory-discipline), [6.1](/chapters/6-1-systems-before-scale) |
-| Income replaced + 6–12 months runway | The full-time threshold | [6.3](/chapters/6-3-going-full-time-or-not) |
+In this section, let `R_order` be modeled order revenue, `C_order` the total modeled selling and
+fulfillment cost, and `Q` the recorded inventory acquisition cost.
 
-## The bankroll ladder (from Chapters [3.2](/chapters/3-2-matching-class-to-capital) / [5.2](/chapters/5-2-bankroll-discipline))
+**C_order = price-linked venue charge + per-order venue charge + postage + supplies + loss
+allowance + labor + allocated fixed cost**
 
-\$20–100 bulk (the school) → \$200–500 first collections → \$2,000–4,000 steady collection
-buying → \$3,000–5,000 liquid sealed → five-figure buys for established stores with reserves.
-All of it cash. None of it rent money.
+**Cost rate = C_order ÷ R_order**
 
-## Packaging tiers (from [Chapter 4.4](/chapters/4-4-fulfillment-and-the-customer-promise))
+**Modeled sale contribution = R_order − Q − C_order**
 
-~\$0.85 windowed envelope → team bag + bubble mailer around \$60–70 orders → signature at \$150
-→ verification call at \$300–500 → boxed tiers for sealed. Pack to the price, not the card.
+For a one-order lot, `C_lot = C_order`. For several expected orders, sum consistently scoped
+`C_order` models and any lot-level cost not already allocated; do not count a component twice.
 
-## The fully-loaded hour (from [Chapter 4.2](/chapters/4-2-choosing-where-to-sell))
+Calculate the cost rate only when `R_order > 0`; at zero revenue, the rate is not computable.
+Contribution is a management result for the modeled sale, not net profit or taxable income.
+Verify changing inputs such as fees and postage for the exact account and transaction,
+then record their source and date. [Chapter 2.2](/chapters/2-2-the-real-cost-stack) shows the complete worksheet.
 
-A one-day show = 25–30 total hours with prep and travel. Price your hours in every venue
-decision, and in every chaos-lot purchase ([2.1](/chapters/2-1-you-make-money-when-you-buy)).
+### Price floor
 
-## The four classes at a glance
+For [Chapter 2.4](/chapters/2-4-selling-is-a-math-problem)'s simple case, let `P` be sale price, `Q` recorded inventory acquisition cost,
+`v` a verified price-linked rate applied directly to `P`, `d` the modeled dollar costs that do
+not change with `P`, and `G` the minimum dollar contribution required by your policy.
 
-Singles = granular, labor-priced. Sealed = capital in a box, chunky liquidity. Bulk = a
-school with a stipend. Slabs = high ticket, capital in a queue. Full matrix: [Chapter 3.1](/chapters/3-1-the-four-product-classes).
-Match to your bankroll and calendar: [Chapter 3.2](/chapters/3-2-matching-class-to-capital).
+**Modeled contribution(P) = P − (v × P) − d − Q**
+
+**Floor = (Q + d + G) ÷ (1 − v)**
+
+Use the shortcut only when `0 ≤ v < 1` and the rate really applies to `P`. If the fee base
+includes shipping or other amounts, solve from the full cost function instead. A floor protects
+the chosen contribution requirement; it does not establish market value or guarantee a sale.
+
+## Cash and inventory movement
+
+### Deployable business cash
+
+[Chapter 5.2](/chapters/5-2-bankroll-discipline) lets `B` be reconciled cleared business cash, `K` named near-term commitments still
+included in that balance, and `R_cash` additional protected operating cash still inside `B` and
+not already counted in `K`. All three are nonnegative and use the same date, currency, and set of
+included business accounts.
+
+**Deployable business cash = max(0, B − K − R_cash)**
+
+Pending payouts and unused credit are not cleared cash. Household money is outside this
+calculation. Do not subtract cash already outside `B`, and count no obligation in both `K` and
+`R_cash`.
+
+### Inventory movement
+
+[Chapter 2.3](/chapters/2-3-cashflow-is-oxygen) measures inventory movement over one stated period and one cost basis:
+
+**Average inventory at cost = (opening inventory at cost + closing inventory at cost) ÷ 2**
+
+**Inventory turns = inventory cost of items sold during the period ÷ average inventory at cost
+for the same period**
+
+Calculate turns only when average inventory at cost is greater than zero; otherwise record it as
+*not computable*. There is no course-wide healthy turn rate. Compare like periods, then use age
+and cash needs to decide what deserves review.
+
+## Capacity and limits
+
+### Completion capacity and backlog
+
+[Chapter 4.3](/chapters/4-3-listing-and-inventory-discipline) uses one workflow unit throughout a capacity calculation. Baseline weeks must be
+greater than zero; zero completed units is valid and produces zero weekly capacity.
+
+**Weekly completion capacity = units made sale-ready and findable ÷ weeks in the baseline
+period**
+
+**Net backlog change for the review period = units received + units returned to the workflow for
+rework − units made sale-ready and findable − other recorded exits during that same period**
+
+Add returned rework only after a prior valid completion; failed first-pass work stays in the queue.
+Name every other exit and count each event once.
+
+**Backlog weeks = queued units ÷ weekly completion capacity**
+
+If capacity is zero, backlog weeks is not computable. Pause intake and inspect the workflow
+instead of dividing by zero.
+
+### Purchase ceiling
+
+For a single purchase, [Chapter 5.2](/chapters/5-2-bankroll-discipline) lets `p` be a reader-chosen share from 0 through 1. The
+optional fixed cap `F` and remaining lane capacity are nonnegative dollar limits in the same
+currency as deployable business cash.
+
+**Remaining lane capacity = max(0, lane total cap − current lane allocation)**
+
+**Without a fixed cap: maximum permitted purchase = min(p × deployable business cash, remaining
+lane capacity)**
+
+**With a fixed cap: maximum permitted purchase = min(p × deployable business cash, F, remaining
+lane capacity)**
+
+Passing this ceiling does not make a purchase safe; all remaining capital-policy gates still
+apply, including the cash-backing test when a credit instrument is used.
+
+## Minimum policy record
+
+The math works only while its assumptions remain visible. Record:
+
+- the decision and exact scope it governs;
+- the applicable measurement basis, date or period, and current status or value;
+- the boundary or trigger and the response when crossed;
+- the person who can act or approve an exception;
+- the source, exact scope, check date, and recheck trigger for any external rule or volatile input;
+- the next review date and the event that forces an earlier review.
+
+Apply this record to pricing, fulfillment/protection, backlog, capital, risk, tools, and role
+decisions. Recheck any old fee, postage, platform threshold, grading time, or tool cost before use.
