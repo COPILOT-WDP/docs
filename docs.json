@@ -4,15 +4,16 @@
   "name": "Pokemon Card Business 101",
   "description": "The free, source-grounded 101 for building an online Pokemon card business. By PokeSignal.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#4ADE80",
-    "dark": "#15803D"
+    "primary": "#C8102E",
+    "light": "#EF3340",
+    "dark": "#A70C24"
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://course.pokesignal.io"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/logo/mark.svg",
   "navbar": {
     "primary": {
       "type": "button",
@@ -95,6 +96,9 @@
     ]
   },
   "seo": {
-    "indexing": "all"
+    "indexing": "all",
+    "metatags": {
+      "canonical": "https://course.pokesignal.io"
+    }
   }
 }
